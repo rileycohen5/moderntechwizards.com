@@ -1,0 +1,315 @@
+Act as a senior full-stack engineer and generate a complete, production-ready, multi-page website for a new AI consulting business called Modern Technology. Use HTML, CSS, and JavaScript (or a lightweight React/Vite setup). The website must be fully responsive, include a global navigation bar and footer, and match a flashy, futuristic, tech-forward design aesthetic.
+
+🎨 Design Requirements
+
+Futuristic, flashy, glowing, neon-accented UI
+
+Dark theme with teal, blue, purple neon
+
+Smooth animations & transitions
+
+Glassmorphism elements (blurred panels)
+
+Modern fonts (Space Grotesk, Inter, Orbitron)
+
+Animated hero sections
+
+Mobile-first responsive layout
+
+📁 Project Structure
+/assets
+   /css/styles.css
+   /js/script.js
+   /audio/   (placeholder audio)
+/images/
+demo-audio.json
+index.html
+services.html
+bundles.html
+demo.html
+custom.html
+about.html
+contact.html
+
+
+All pages must be linked through the navbar & footer.
+
+🧩 Pages to Build
+1. Homepage — index.html
+
+Include:
+
+Hero Section
+
+Headline: “Build AI voice agents that never sleep.”
+
+Subheadline: “Modern Technology creates AI systems that handle calls, schedule appointments, and automate marketing — 24/7.”
+
+Buttons: Get a Demo, Explore Bundles
+
+What We Do Section
+
+3 feature cards:
+
+AI Voice Agents
+
+24/7 Support Automation
+
+Revenue-Focused Automation
+
+Who We Help
+
+Industries like mortgage, real estate, dental, medical, insurance, home services.
+
+How It Works (3 Steps)
+
+Discover & Design
+
+Train & Integrate
+
+Launch & Optimize
+
+2. Services (Individual Products) — services.html
+
+Create detailed product cards for:
+
+AI Voice Agents
+
+24/7 Customer Service Rep (AI)
+
+Appointment Scheduler AI
+
+Outbound Call Agents
+
+Email Marketing Automation
+
+SMS Marketing Automation
+
+Organic Social Media Marketing Automation
+
+Also include:
+
+Support for 1000+ voices, dialects, genders
+
+Custom knowledge base ingestion
+
+Multi-language capabilities
+
+Custom prompts and flows
+
+Integration abilities (CRM, calendar, APIs)
+
+3. Bundles Page — bundles.html
+
+Create futuristic pricing tiers:
+
+Tier 1 — Core AI Voice Agent
+
+24/7 agent
+
+Basic call flows
+
+Standard knowledge base
+
+Call summaries
+
+Placeholder price: $1,497/mo
+
+Tier 2 — AI Agent + Integrations
+
+Everything in Tier 1
+
+Calendar integration
+
+CRM integration
+
+Scheduling
+
+SMS confirmations
+
+Placeholder price: $2,497/mo
+
+Tier 3 — Full Automation Suite
+
+Everything in Tier 2
+
+Outbound calling
+
+Email automation
+
+SMS automation
+
+Organic social automation
+
+Custom workflows
+
+Placeholder price: $3,997/mo
+
+Include comparison table + neon hover cards.
+
+4. Demo Audio Page — demo.html
+
+Include:
+
+Hero Section
+
+“Hear Modern Technology in Action.”
+
+Audio Demo Grid
+
+Sections:
+
+Customer Service
+
+Appointment Scheduling
+
+Sales/Outbound
+
+Follow-Up & Reminders
+
+Industry Specific
+
+Each with audio players.
+
+Try Your Own Scenario Section
+
+Simple text input or placeholder form.
+
+Load audio data from demo-audio.json.
+5. demo-audio.json
+
+Create and include this JSON file:
+
+[
+  {
+    "id": "mortgage_inbound_cs_01",
+    "title": "Mortgage – Inbound Customer Service",
+    "category": "Customer Service",
+    "industry": "Mortgage",
+    "filePath": "/assets/audio/mortgage_inbound_cs_01.mp3",
+    "lengthSeconds": 42,
+    "language": "en-US",
+    "voiceProfile": "Female, neutral, professional",
+    "description": "AI agent answers a borrower call about loan status, verifies identity, and provides a clear update."
+  },
+  {
+    "id": "dental_appointment_new_patient_01",
+    "title": "Dental – New Patient Appointment",
+    "category": "Appointment Scheduling",
+    "industry": "Dental",
+    "filePath": "/assets/audio/dental_appointment_new_patient_01.mp3",
+    "lengthSeconds": 35,
+    "language": "en-US",
+    "voiceProfile": "Male, friendly, upbeat",
+    "description": "AI agent books a first-time dental appointment and sends a confirmation text."
+  },
+  {
+    "id": "mortgage_outbound_followup_01",
+    "title": "Mortgage – Lead Follow-Up",
+    "category": "Sales / Outbound",
+    "industry": "Mortgage",
+    "filePath": "/assets/audio/mortgage_outbound_followup_01.mp3",
+    "lengthSeconds": 55,
+    "language": "en-US",
+    "voiceProfile": "Female, confident",
+    "description": "AI agent follows up on a mortgage lead and books a call with a loan officer."
+  }
+]
+
+6. Custom Solutions Page — custom.html
+
+Sections:
+
+Title
+
+“Custom AI Solutions Built Around Your Workflow.”
+
+Examples of Custom Work
+
+Industry-specific call flows
+
+Multi-system integrations
+
+Document/task automation
+
+Data-driven optimization
+
+CTA
+
+“Book a Custom Strategy Session”
+
+7. About Us Page — about.html
+Main Sections
+
+Our Mission
+
+What We Believe
+
+Why Modern Technology?
+
+Story of the company (placeholder)
+
+8. Contact Page — contact.html
+
+Include a form with:
+
+Full Name
+
+Company
+
+Email
+
+Phone (optional)
+
+Message box (“Tell us about your use case…”)
+
+Side panel:
+
+Email placeholder: hello@moderntechnology.ai
+
+Response time: 1 business day
+
+🔤 ASCII Header Logo
+
+Place at top of site in a <pre> tag or convert into SVG later:
+
+ __  __           _                 _           _______        _             
+|  \/  | ___   __| | ___ _ __   ___| |_ _   _  |__   __| ___  | | ___   _ ___ 
+| |\/| |/ _ \ / _` |/ _ \ '_ \ / __| __| | | |    | |   / _ \ | |/ / | | / __|
+| |  | | (_) | (_| |  __/ | | | (__| |_| |_| |    | |  | (_) ||   <| |_| \__ \
+|_|  |_|\___/ \__,_|\___|_| |_|\___|\__|\__, |    |_|   \___(_)_|\_\\__,_|___/
+                                        |___/                                 
+          MODERN  ·  TECHNOLOGY  ·  AI  ·  SYSTEMS
+
+⚙️ Functionality Requirements
+
+All pages linked through navbar/footer
+
+Smooth page transitions
+
+Animated hover states
+
+Custom audio player styling
+
+Mobile responsive layout
+
+Use JS to load JSON and render demos
+
+Clean semantic HTML
+
+🧨 Deliverables
+
+Replit must generate:
+
+✔ All HTML pages
+✔ styles.css
+✔ script.js
+✔ demo-audio.json
+✔ Navbar + footer
+✔ Fully functioning links
+✔ Fully styled futuristic theme
+✔ Responsive design
+✔ Placeholder audio files
+
+🏁 Final Instruction
+Build the entire website exactly as specified above. Generate all pages, all content, all styling, all components, and all JSON. Make the site ready to run instantly.
