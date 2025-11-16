@@ -241,7 +241,7 @@ export default function ProductsPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href="/contact" className="w-full">
+                <Link href="/contact" className="w-full" data-testid={`link-tier-cta-${index}`}>
                   <Button
                     className="w-full neon-glow-hover font-semibold text-lg py-6"
                     variant={tier.popular ? "default" : "outline"}
@@ -307,7 +307,7 @@ export default function ProductsPage() {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Schedule a consultation to discuss which automation product is right for you.
           </p>
-          <Link href="/contact">
+          <Link href="/contact" data-testid="link-contact-cta">
             <Button size="lg" className="neon-glow-hover font-semibold px-8 py-6 text-lg" data-testid="button-schedule-consultation">
               Schedule Free Consultation
             </Button>
