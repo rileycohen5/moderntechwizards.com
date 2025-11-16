@@ -23,8 +23,9 @@ export function TooltipInfo({ content }: TooltipInfoProps) {
       </TooltipTrigger>
       <TooltipContent 
         side="top" 
-        className="max-w-xs z-[100] bg-card border-primary/20" 
+        className="max-w-xs !z-[9999] bg-card border-primary/20 shadow-2xl" 
         data-testid="tooltip-content"
+        sideOffset={8}
       >
         <p className="text-sm">{content}</p>
       </TooltipContent>
