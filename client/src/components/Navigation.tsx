@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/Modern Tech Logo - Copy_1763308971469.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -22,14 +23,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" data-testid="link-home-logo">
-            <pre className="font-mono text-[8px] sm:text-xs leading-tight text-primary hover-elevate active-elevate-2 cursor-pointer select-none">
-{`__  __           _                
-|  \\/  | ___   __| | ___ _ __  
-| |\\/| |/ _ \\ / _\` |/ _ \\ '_ \\ 
-| |  | | (_) | (_| |  __/ | | |
-|_|  |_|\\___/ \\__,_|\\___|_| |_|
-  MODERN · TECHNOLOGY`}
-            </pre>
+            <img 
+              src={logoImage} 
+              alt="Modern Technology" 
+              className="h-10 sm:h-12 w-auto hover-elevate active-elevate-2 cursor-pointer"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
