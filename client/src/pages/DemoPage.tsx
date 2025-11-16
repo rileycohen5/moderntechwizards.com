@@ -20,7 +20,6 @@ interface AudioDemo {
 export default function DemoPage() {
   const [demos, setDemos] = useState<AudioDemo[]>([]);
   const [playingId, setPlayingId] = useState<string | null>(null);
-  const [scenario, setScenario] = useState("");
 
   useEffect(() => {
     fetch('/demo-audio.json')
@@ -107,31 +106,6 @@ export default function DemoPage() {
             </div>
           </div>
         ))}
-
-        <Card className="glass-effect mt-16">
-          <CardHeader>
-            <CardTitle className="font-display text-2xl">Try Your Own Scenario</CardTitle>
-            <CardDescription>
-              Describe a use case and we'll create a custom demo for you
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <Textarea
-              placeholder="Tell us about your use case... (e.g., 'I need an AI to handle dental appointment cancellations and offer rebooking options')"
-              value={scenario}
-              onChange={(e) => setScenario(e.target.value)}
-              className="min-h-32 glass-effect"
-              data-testid="input-scenario"
-            />
-            <Button 
-              className="w-full sm:w-auto neon-glow-hover"
-              onClick={() => console.log('Scenario submitted:', scenario)}
-              data-testid="button-submit-scenario"
-            >
-              Request Custom Demo
-            </Button>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

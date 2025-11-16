@@ -250,23 +250,6 @@ export default function ContactPage() {
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="glass-effect neon-border">
-              <CardContent className="p-6">
-                <h3 className="font-display text-lg font-bold mb-2">Prefer to talk?</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Schedule a call and we'll discuss your needs in detail
-                </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full"
-                  onClick={() => console.log('Schedule call clicked')}
-                  data-testid="button-schedule-call"
-                >
-                  Schedule a Call
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

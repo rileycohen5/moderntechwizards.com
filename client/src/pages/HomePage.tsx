@@ -57,10 +57,10 @@ export default function HomePage() {
             Modern Technology creates AI systems that handle calls, schedule appointments, and automate marketing — 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/demo">
-              <Button size="lg" className="neon-glow-hover" data-testid="button-get-demo">
+            <Link href="/contact">
+              <Button size="lg" className="neon-glow-hover" data-testid="button-get-in-contact">
                 <Phone className="mr-2 h-5 w-5" />
-                Get a Demo
+                Get in contact
               </Button>
             </Link>
             <Link href="/products">

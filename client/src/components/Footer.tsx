@@ -33,9 +33,25 @@ export default function Footer() {
 
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li data-testid="text-contact-email">hello@moderntechnology.ai</li>
-              <li data-testid="text-response-time">Response time: 1 business day</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a 
+                  href="mailto:riley@moderntechnology.com" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="text-contact-email"
+                >
+                  riley@moderntechnology.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="tel:949-887-9822" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="text-contact-phone"
+                >
+                  949-887-9822
+                </a>
+              </li>
             </ul>
           </div>
         </div>
