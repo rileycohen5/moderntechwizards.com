@@ -101,6 +101,71 @@ export default function AboutPage() {
               </CardContent>
             </Card>
           </section>
+
+          <section>
+            <h2 className="font-display text-3xl font-bold mb-6 text-center">Meet the Founder</h2>
+            <Card className="glass-effect">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center">
+                  <h3 className="font-display text-2xl font-bold mb-2 gradient-text">Riley Cohen</h3>
+                  <p className="text-lg text-muted-foreground">Founder & Lead AI Architect</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Education</h4>
+                    <p className="text-muted-foreground">
+                      UC Berkeley Graduate, Applied Mathematics & Data Science — Top of Class
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Background</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Riley has spent the last 5 years building cutting-edge technology for large companies in the 
+                      mortgage industry, specializing in AI-driven solutions that transform how businesses operate.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Experience Highlights</h4>
+                    <div className="space-y-3">
+                      <div className="glass-effect p-4 rounded-md">
+                        <div className="flex items-start justify-between mb-2">
+                          <div>
+                            <p className="font-semibold">Solutions Architect at Insellerate</p>
+                            <p className="text-sm text-muted-foreground">Oct 2022 - Present · 3+ years</p>
+                          </div>
+                        </div>
+                        <ul className="space-y-2 text-sm text-muted-foreground mt-3">
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>Lead Engineer & Product Manager of AI Products – Voice AI systems, chatbots, and LLM-based applications</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>AI Engineering & Prompt Engineering Expert – LLM optimization, classification models, and predictive analytics</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>Advanced AI Call Analytics – Architect AI platforms analyzing call interactions for objections, compliance, and sentiment</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>Cross-Functional Leadership – Manage teams across Solutions, Data Engineering, Customer Success, and Sales</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>API & Integration Development – Build scalable APIs enabling seamless data flow across CRMs and analytics platforms</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
         </div>
       </div>
     </div>
