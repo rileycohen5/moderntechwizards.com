@@ -103,65 +103,35 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="font-display text-3xl font-bold mb-6 text-center">Meet the Founder</h2>
+            <h2 className="font-display text-3xl font-bold mb-6 text-center">About Riley Cohen</h2>
             <Card className="glass-effect">
               <CardContent className="p-8 space-y-6">
-                <div className="text-center">
+                <div className="text-center mb-6">
                   <h3 className="font-display text-2xl font-bold mb-2 gradient-text">Riley Cohen</h3>
                   <p className="text-lg text-muted-foreground">Founder & Lead AI Architect</p>
                 </div>
                 
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Education</h4>
-                    <p className="text-muted-foreground">
-                      UC Berkeley Graduate, Applied Mathematics & Data Science — Top of Class
-                    </p>
-                  </div>
+                <div className="space-y-4 text-lg leading-relaxed">
+                  <p>
+                    Riley Cohen is an AI engineer and data science leader who has spent the last five years building 
+                    advanced automation and voice AI systems for the mortgage industry. A top-of-class Applied Mathematics 
+                    & Data Science graduate from UC Berkeley, Riley specializes in real-time AI voice agents, LLM engineering, 
+                    and scalable data platforms.
+                  </p>
 
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Background</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Riley has spent the last 5 years building cutting-edge technology for large companies in the 
-                      mortgage industry, specializing in AI-driven solutions that transform how businesses operate.
-                    </p>
-                  </div>
+                  <p>
+                    As Director of AI and Data Engineering at Insellerate, Riley led the design and deployment of 
+                    enterprise-grade AI products used by lenders nationwide—covering voice agents, predictive analytics, 
+                    compliance automation, and large-scale data integrations. His work spans AI product development, 
+                    API engineering, advanced call intelligence, and cross-team technical leadership.
+                  </p>
 
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Experience Highlights</h4>
-                    <div className="space-y-3">
-                      <div className="glass-effect p-4 rounded-md">
-                        <div className="flex items-start justify-between mb-2">
-                          <div>
-                            <p className="font-semibold">Solutions Architect at Insellerate</p>
-                            <p className="text-sm text-muted-foreground">Oct 2022 - Present · 3+ years</p>
-                          </div>
-                        </div>
-                        <ul className="space-y-2 text-sm text-muted-foreground mt-3">
-                          <li className="flex items-start gap-2">
-                            <span className="text-primary mt-1">▸</span>
-                            <span>Lead Engineer & Product Manager of AI Products – Voice AI systems, chatbots, and LLM-based applications</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-primary mt-1">▸</span>
-                            <span>AI Engineering & Prompt Engineering Expert – LLM optimization, classification models, and predictive analytics</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-primary mt-1">▸</span>
-                            <span>Advanced AI Call Analytics – Architect AI platforms analyzing call interactions for objections, compliance, and sentiment</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-primary mt-1">▸</span>
-                            <span>Cross-Functional Leadership – Manage teams across Solutions, Data Engineering, Customer Success, and Sales</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-primary mt-1">▸</span>
-                            <span>API & Integration Development – Build scalable APIs enabling seamless data flow across CRMs and analytics platforms</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <p>
+                    Riley founded Modern Technology to bring this expertise to businesses looking to modernize their 
+                    operations, automate workflows, and leverage cutting-edge AI. He focuses on building intelligent 
+                    voice agents, custom integrations, and high-impact automation systems that help companies operate 
+                    faster, smarter, and with 24/7 efficiency.
+                  </p>
                 </div>
               </CardContent>
             </Card>
