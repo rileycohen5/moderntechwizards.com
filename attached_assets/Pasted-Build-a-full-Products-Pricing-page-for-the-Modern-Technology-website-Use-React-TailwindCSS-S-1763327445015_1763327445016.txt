@@ -1,0 +1,127 @@
+Build a full “Products & Pricing” page for the Modern Technology website.
+Use React + TailwindCSS. Style should be futuristic, clean, neon-accented (blue/purple/teal), and mobile-responsive. Include animations, hover effects, and tooltip popovers (question mark icons) that show feature descriptions.
+
+PAGE STRUCTURE
+1. Header Section
+
+Title: “AI Products & Bundles”
+
+Subtitle: “Choose the automation level that fits your business.”
+
+Animated gradient background
+
+Clean glowing divider
+
+2. Pricing Toggle
+
+Create a top-level pricing toggle:
+
+Toggle between Monthly vs Yearly (Save 25%)
+
+Monthly pricing:
+
+Basic: $1,000 / month
+
+Advanced: $2,250 / month
+
+Suite: $3,250 / month
+
+Yearly pricing:
+
+Basic: $750 / month (billed annually)
+
+Advanced: $1,800 / month (billed annually)
+
+Suite: $2,700 / month (billed annually)
+
+Make the toggle visually animated with smooth transitions.
+
+3. Tier Cards (Side-By-Side)
+
+Create three pricing/product cards: Basic, Advanced, Suite.
+Each card should show price based on toggle state, feature list, and a CTA button.
+
+🟦 BASIC TIER
+
+Title: Basic
+Price (Controlled by toggle)
+Features with tooltip icons:
+
+24/7 AI Voice Agent (1,000 minutes)
+Tooltip: “Handles all inbound calls day or night. Captures caller intent, answers FAQs, collects appointment preferences, and logs summaries.”
+
+Custom Knowledge Base
+Tooltip: “Upload documents, FAQs, service details, and scripts so the AI responds exactly like your business.”
+
+Custom Voices
+Tooltip: “Choose from thousands of AI voices matching gender, tone, dialect, and brand personality.”
+
+Call Summaries & Transcripts
+Tooltip: “Automatically generate clean summaries and transcripts for every call.”
+
+Analytics Dashboard
+Tooltip: “See call volume, questions asked, scheduled appointments, and more.”
+
+Excellent Customer Support
+Tooltip: “Fast, responsive support whenever you need help.”
+
+🟩 ADVANCED TIER
+
+Title: Advanced
+Price (toggle)
+Features with tooltips:
+
+Everything in Starter (2,500 total AI call minutes)
+Tooltip: “Includes all Basic features plus expanded AI call minutes.”
+
+Outbound AI Agent
+Tooltip: “AI places outbound calls for reminders, check-ins, rating phishing, reactivation, and lead nurturing.”
+
+Appointment Scheduling
+Tooltip: “AI books, reschedules, or cancels appointments through integrated calendars.”
+
+Missed-call Follow-ups
+Tooltip: “AI instantly returns missed calls to keep leads warm.”
+
+CRM Integrations
+Tooltip: “Custom integration with CRM systems like HubSpot, Salesforce, Zoho, and more.”
+
+Calendar Integrations
+Tooltip: “Syncs with Google or Outlook calendar for real-time availability.”
+
+Custom Reports
+Tooltip: “We build reporting dashboards tailored to your business KPIs.”
+
+🟪 SUITE TIER
+
+Title: Suite
+Price (toggle)
+Features with tooltips:
+
+Everything in Growth
+Tooltip: “Everything in Advanced, plus multi-system upgrades and priority enhancements.”
+
+Email Marketing Automation
+Tooltip: “Branded email campaigns: holidays, birthdays, promotions, educationals, cold outreach, review phishing, and drip sequences.”
+
+SMS Marketing Automation
+Tooltip: “SMS campaigns for holidays, promotions, reminders, surveys, and reactivation.”
+
+Organic Social Media Management (3–7 posts/week)
+Tooltip: “AI-generated social content + posting for Instagram, Facebook, and X.”
+
+4. Component Requirements
+
+Use modular components: PricingToggle.jsx, TierCard.jsx, Tooltip.jsx, FeatureList.jsx
+
+Tooltip should be a small question-mark icon (“?”) that on hover shows a floating description box with a fade-in animation.
+
+Card hover animation: slight scale + glowing neon outline.
+
+CTA Buttons for each tier:
+
+Basic: “Start Basic”
+
+Advanced: “Upgrade to Advanced”
+
+Suite: “Go Full Automation”

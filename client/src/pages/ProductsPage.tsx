@@ -2,62 +2,125 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Phone, Brain, Calendar, Mail, MessageSquare, Share2, Video, Database, BarChart, Headphones, Users } from "lucide-react";
+import { Check, Phone, Brain, Calendar, Mail, MessageSquare, Share2, BarChart, Headphones } from "lucide-react";
 import { Link } from "wouter";
+import { TooltipInfo } from "@/components/ui/tooltip-info";
 
 export default function ProductsPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly");
 
   const tiers = [
     {
-      name: "Starter AI Presence",
-      basePrice: 750,
+      name: "Basic",
+      monthlyPrice: 1000,
+      yearlyPrice: 750,
       description: "Essential AI calling for growing businesses",
       features: [
-        { text: "24/7 AI Voice Agent (1,000 minutes)", icon: Phone },
-        { text: "Custom Knowledge Base", icon: Brain },
-        { text: "Custom Voices", icon: Headphones },
-        { text: "Call Summaries & Transcripts", icon: MessageSquare },
-        { text: "Analytics Dashboard", icon: BarChart },
-        { text: "Basic Reporting", icon: Database },
-        { text: "Email Support", icon: Mail },
-        { text: "Business Hours Phone Support", icon: Phone },
+        { 
+          text: "24/7 AI Voice Agent (1,000 minutes)", 
+          icon: Phone,
+          tooltip: "Handles all inbound calls day or night. Captures caller intent, answers FAQs, collects appointment preferences, and logs summaries."
+        },
+        { 
+          text: "Custom Knowledge Base", 
+          icon: Brain,
+          tooltip: "Upload documents, FAQs, service details, and scripts so the AI responds exactly like your business."
+        },
+        { 
+          text: "Custom Voices", 
+          icon: Headphones,
+          tooltip: "Choose from thousands of AI voices matching gender, tone, dialect, and brand personality."
+        },
+        { 
+          text: "Call Summaries & Transcripts", 
+          icon: MessageSquare,
+          tooltip: "Automatically generate clean summaries and transcripts for every call."
+        },
+        { 
+          text: "Analytics Dashboard", 
+          icon: BarChart,
+          tooltip: "See call volume, questions asked, scheduled appointments, and more."
+        },
+        { 
+          text: "Excellent Customer Support", 
+          icon: Headphones,
+          tooltip: "Fast, responsive support whenever you need help."
+        },
       ],
-      cta: "Get Started",
+      cta: "Start Basic",
       popular: false,
     },
     {
-      name: "Growth Automations",
-      basePrice: 1500,
+      name: "Advanced",
+      monthlyPrice: 2250,
+      yearlyPrice: 1800,
       description: "Connected AI that works with your existing tools",
       features: [
-        { text: "Everything in Starter", icon: Check },
-        { text: "Outbound AI Agent", icon: Phone },
-        { text: "Appointment Scheduling", icon: Calendar },
-        { text: "Missed-call Follow-ups", icon: MessageSquare },
-        { text: "Customer Check-Ins", icon: Users },
-        { text: "Review Generation", icon: Share2 },
-        { text: "Lead Nurturing", icon: Brain },
-        { text: "CRM Integrations", icon: Database },
-        { text: "Calendar Integrations", icon: Calendar },
-        { text: "Custom Reports", icon: BarChart },
-        { text: "Priority Support", icon: Headphones },
+        { 
+          text: "Everything in Basic (2,500 total AI call minutes)", 
+          icon: Check,
+          tooltip: "Includes all Basic features plus expanded AI call minutes."
+        },
+        { 
+          text: "Outbound AI Agent", 
+          icon: Phone,
+          tooltip: "AI places outbound calls for reminders, check-ins, rating phishing, reactivation, and lead nurturing."
+        },
+        { 
+          text: "Appointment Scheduling", 
+          icon: Calendar,
+          tooltip: "AI books, reschedules, or cancels appointments through integrated calendars."
+        },
+        { 
+          text: "Missed-call Follow-ups", 
+          icon: MessageSquare,
+          tooltip: "AI instantly returns missed calls to keep leads warm."
+        },
+        { 
+          text: "CRM Integrations", 
+          icon: Brain,
+          tooltip: "Custom integration with CRM systems like HubSpot, Salesforce, Zoho, and more."
+        },
+        { 
+          text: "Calendar Integrations", 
+          icon: Calendar,
+          tooltip: "Syncs with Google or Outlook calendar for real-time availability."
+        },
+        { 
+          text: "Custom Reports", 
+          icon: BarChart,
+          tooltip: "We build reporting dashboards tailored to your business KPIs."
+        },
       ],
-      cta: "Scale My Business",
+      cta: "Upgrade to Advanced",
       popular: true,
     },
     {
-      name: "Full AI Engagement Suite",
-      basePrice: 3000,
+      name: "Suite",
+      monthlyPrice: 3250,
+      yearlyPrice: 2700,
       description: "Complete marketing and sales automation platform",
       features: [
-        { text: "Everything in Growth", icon: Check },
-        { text: "Email Marketing Automation", icon: Mail },
-        { text: "SMS Marketing Automation", icon: MessageSquare },
-        { text: "Organic Social Media Management (3–7 posts/week)", icon: Share2 },
-        { text: "AI Copywriting + Optional Video", icon: Video },
-        { text: "Quarterly Strategy Sessions", icon: Users },
-        { text: "Enterprise Customizations", icon: Brain },
+        { 
+          text: "Everything in Advanced", 
+          icon: Check,
+          tooltip: "Everything in Advanced, plus multi-system upgrades and priority enhancements."
+        },
+        { 
+          text: "Email Marketing Automation", 
+          icon: Mail,
+          tooltip: "Branded email campaigns: holidays, birthdays, promotions, educationals, cold outreach, review phishing, and drip sequences."
+        },
+        { 
+          text: "SMS Marketing Automation", 
+          icon: MessageSquare,
+          tooltip: "SMS campaigns for holidays, promotions, reminders, surveys, and reactivation."
+        },
+        { 
+          text: "Organic Social Media Management (3–7 posts/week)", 
+          icon: Share2,
+          tooltip: "AI-generated social content + posting for Instagram, Facebook, and X."
+        },
       ],
       cta: "Go Full Automation",
       popular: false,
@@ -66,93 +129,124 @@ export default function ProductsPage() {
 
   const comparisonFeatures = [
     { 
-      name: "Voice AI", 
-      starter: "24/7 AI Voice Agent", 
-      growth: "24/7 AI Voice Agent", 
-      suite: "24/7 AI Voice Agent",
+      name: "Voice AI Coverage", 
+      basic: "24/7 Inbound Only", 
+      advanced: "24/7 Inbound + Outbound", 
+      suite: "24/7 Inbound + Outbound",
       icon: Phone 
     },
     { 
-      name: "Minutes Included", 
-      starter: "1,000 minutes/mo", 
-      growth: "3,000 minutes/mo", 
-      suite: "10,000 minutes/mo",
+      name: "AI Call Minutes", 
+      basic: "1,000 minutes/mo", 
+      advanced: "2,500 minutes/mo", 
+      suite: "2,500+ minutes/mo",
       icon: BarChart 
     },
     { 
-      name: "Outbound Automation", 
-      starter: false, 
-      growth: true, 
+      name: "Custom Knowledge Base", 
+      basic: true, 
+      advanced: true, 
       suite: true,
-      icon: Phone 
+      icon: Brain 
     },
     { 
-      name: "CRM Integration", 
-      starter: false, 
-      growth: true, 
+      name: "Custom AI Voices", 
+      basic: true, 
+      advanced: true, 
       suite: true,
-      icon: Database 
+      icon: Headphones 
     },
     { 
-      name: "Calendar Integration", 
-      starter: false, 
-      growth: true, 
-      suite: true,
-      icon: Calendar 
-    },
-    { 
-      name: "Reporting", 
-      starter: "Basic", 
-      growth: "Custom", 
-      suite: "Advanced Analytics",
-      icon: BarChart 
-    },
-    { 
-      name: "Email Automation", 
-      starter: false, 
-      growth: false, 
-      suite: true,
-      icon: Mail 
-    },
-    { 
-      name: "SMS Automation", 
-      starter: false, 
-      growth: false, 
+      name: "Call Summaries & Transcripts", 
+      basic: true, 
+      advanced: true, 
       suite: true,
       icon: MessageSquare 
     },
     { 
-      name: "Social Media Posts", 
-      starter: false, 
-      growth: false, 
+      name: "Outbound AI Calling", 
+      basic: false, 
+      advanced: true, 
+      suite: true,
+      icon: Phone 
+    },
+    { 
+      name: "Appointment Scheduling", 
+      basic: false, 
+      advanced: true, 
+      suite: true,
+      icon: Calendar 
+    },
+    { 
+      name: "Missed-call Follow-ups", 
+      basic: false, 
+      advanced: true, 
+      suite: true,
+      icon: MessageSquare 
+    },
+    { 
+      name: "CRM Integration", 
+      basic: false, 
+      advanced: true, 
+      suite: true,
+      icon: Brain 
+    },
+    { 
+      name: "Calendar Integration", 
+      basic: false, 
+      advanced: true, 
+      suite: true,
+      icon: Calendar 
+    },
+    { 
+      name: "Analytics & Reporting", 
+      basic: "Basic Dashboard", 
+      advanced: "Custom Reports", 
+      suite: "Custom Reports",
+      icon: BarChart 
+    },
+    { 
+      name: "Email Marketing Automation", 
+      basic: false, 
+      advanced: false, 
+      suite: true,
+      icon: Mail 
+    },
+    { 
+      name: "SMS Marketing Automation", 
+      basic: false, 
+      advanced: false, 
+      suite: true,
+      icon: MessageSquare 
+    },
+    { 
+      name: "Social Media Management", 
+      basic: false, 
+      advanced: false, 
       suite: "3–7 posts/week",
       icon: Share2 
     },
     { 
-      name: "Support Level", 
-      starter: "Email + Business Hours", 
-      growth: "Priority Support", 
-      suite: "Dedicated Account Manager",
+      name: "Customer Support", 
+      basic: "Email + Phone", 
+      advanced: "Priority Support", 
+      suite: "Priority Support",
       icon: Headphones 
-    },
-    { 
-      name: "AI Video", 
-      starter: false, 
-      growth: false, 
-      suite: "Optional",
-      icon: Video 
     },
   ];
 
-  const getPrice = (basePrice: number) => {
-    const yearlyPrice = Math.round(basePrice * 0.9);
-    return billingCycle === "monthly" ? basePrice : yearlyPrice;
+  const getPrice = (tier: typeof tiers[0]) => {
+    return billingCycle === "monthly" ? tier.monthlyPrice : tier.yearlyPrice;
+  };
+
+  const getSavings = (tier: typeof tiers[0]) => {
+    return tier.monthlyPrice - tier.yearlyPrice;
   };
 
   const renderFeatureCell = (value: string | boolean) => {
     if (typeof value === "boolean") {
       return value ? (
-        <Check className="h-5 w-5 text-primary mx-auto" />
+        <Check className="h-5 w-5 text-primary mx-auto" data-testid="icon-check" />
       ) : (
         <span className="text-muted-foreground">—</span>
       );
@@ -166,10 +260,10 @@ export default function ProductsPage() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 gradient-text animate-pulse-slow" data-testid="text-page-title">
-            AI Automation Products
+            AI Products & Bundles
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8" data-testid="text-page-description">
-            Choose the level of automation that fits your business.
+            Choose the automation level that fits your business.
           </p>
 
           {/* Billing Toggle */}
@@ -192,7 +286,7 @@ export default function ProductsPage() {
             </button>
             <span className={`text-lg ${billingCycle === "yearly" ? "text-foreground font-semibold" : "text-muted-foreground"}`}>
               Yearly
-              <Badge className="ml-2 bg-primary text-primary-foreground">10% OFF</Badge>
+              <Badge className="ml-2 bg-primary text-primary-foreground">Save 25%</Badge>
             </span>
           </div>
         </div>
@@ -217,12 +311,17 @@ export default function ProductsPage() {
                 <CardDescription className="text-base">{tier.description}</CardDescription>
                 <div className="mt-6">
                   <span className="text-5xl font-bold gradient-text" data-testid={`text-price-${index}`}>
-                    ${getPrice(tier.basePrice)}
+                    ${getPrice(tier).toLocaleString()}
                   </span>
                   <span className="text-muted-foreground text-lg">/month</span>
                   {billingCycle === "yearly" && (
                     <div className="text-sm text-muted-foreground mt-2">
-                      <span className="line-through">${tier.basePrice}</span> - Save ${tier.basePrice - getPrice(tier.basePrice)}/mo
+                      <span className="line-through">${tier.monthlyPrice.toLocaleString()}</span> - Save ${getSavings(tier)}/mo
+                    </div>
+                  )}
+                  {billingCycle === "yearly" && (
+                    <div className="text-xs text-muted-foreground mt-1">
+                      Billed annually at ${(tier.yearlyPrice * 12).toLocaleString()}
                     </div>
                   )}
                 </div>
@@ -232,9 +331,10 @@ export default function ProductsPage() {
                   {tier.features.map((feature, featureIndex) => {
                     const Icon = feature.icon;
                     return (
-                      <li key={featureIndex} className="flex items-start gap-3">
+                      <li key={featureIndex} className="flex items-start gap-3" data-testid={`feature-${index}-${featureIndex}`}>
                         <Icon className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm leading-relaxed">{feature.text}</span>
+                        <span className="text-sm leading-relaxed flex-1">{feature.text}</span>
+                        <TooltipInfo content={feature.tooltip} />
                       </li>
                     );
                   })}
@@ -265,9 +365,9 @@ export default function ProductsPage() {
               <thead>
                 <tr className="border-b-2 border-primary/30">
                   <th className="text-left py-5 px-4 font-display text-lg">Feature</th>
-                  <th className="text-center py-5 px-4 font-display text-lg">Starter</th>
+                  <th className="text-center py-5 px-4 font-display text-lg">Basic</th>
                   <th className="text-center py-5 px-4 font-display text-lg bg-primary/10 rounded-t-lg">
-                    Growth
+                    Advanced
                     <Badge className="ml-2 bg-primary text-primary-foreground text-xs">Popular</Badge>
                   </th>
                   <th className="text-center py-5 px-4 font-display text-lg">Suite</th>
@@ -288,8 +388,8 @@ export default function ProductsPage() {
                           <span className="font-medium">{feature.name}</span>
                         </div>
                       </td>
-                      <td className="text-center py-5 px-4">{renderFeatureCell(feature.starter)}</td>
-                      <td className="text-center py-5 px-4 bg-primary/5">{renderFeatureCell(feature.growth)}</td>
+                      <td className="text-center py-5 px-4">{renderFeatureCell(feature.basic)}</td>
+                      <td className="text-center py-5 px-4 bg-primary/5">{renderFeatureCell(feature.advanced)}</td>
                       <td className="text-center py-5 px-4">{renderFeatureCell(feature.suite)}</td>
                     </tr>
                   );
