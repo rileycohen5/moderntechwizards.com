@@ -63,10 +63,10 @@ export default function HomePage() {
                 Get a Demo
               </Button>
             </Link>
-            <Link href="/bundles">
-              <Button size="lg" variant="outline" className="hover-elevate active-elevate-2" data-testid="button-explore-bundles">
+            <Link href="/products">
+              <Button size="lg" variant="outline" className="hover-elevate active-elevate-2" data-testid="button-explore-products">
                 <Zap className="mr-2 h-5 w-5" />
-                Explore Bundles
+                Explore Products
               </Button>
             </Link>
           </div>

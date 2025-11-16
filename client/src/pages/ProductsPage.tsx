@@ -166,7 +166,7 @@ export default function ProductsPage() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 gradient-text animate-pulse-slow" data-testid="text-page-title">
-            AI Automation Bundles
+            AI Automation Products
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8" data-testid="text-page-description">
             Choose the level of automation that fits your business.
@@ -305,7 +305,7 @@ export default function ProductsPage() {
             Ready to Transform Your Business?
           </h3>
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Schedule a consultation to discuss which automation bundle is right for you.
+            Schedule a consultation to discuss which automation product is right for you.
           </p>
           <Link href="/contact">
             <Button size="lg" className="neon-glow-hover font-semibold px-8 py-6 text-lg" data-testid="button-schedule-consultation">
