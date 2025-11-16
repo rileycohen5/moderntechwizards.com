@@ -7,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HomePage from "@/pages/HomePage";
 import ServicesPage from "@/pages/ServicesPage";
-import BundlesPage from "@/pages/BundlesPage";
+import ProductsPage from "@/pages/ProductsPage";
 import DemoPage from "@/pages/DemoPage";
 import CustomPage from "@/pages/CustomPage";
 import AboutPage from "@/pages/AboutPage";
@@ -22,7 +22,7 @@ function Router() {
         <Switch>
           <Route path="/" component={HomePage} />
           <Route path="/services" component={ServicesPage} />
-          <Route path="/bundles" component={BundlesPage} />
+          <Route path="/products" component={ProductsPage} />
           <Route path="/demo" component={DemoPage} />
           <Route path="/custom" component={CustomPage} />
           <Route path="/about" component={AboutPage} />

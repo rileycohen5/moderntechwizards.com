@@ -11,7 +11,7 @@ export default function Navigation() {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/services", label: "Services" },
-    { path: "/bundles", label: "Bundles" },
+    { path: "/products", label: "Products" },
     { path: "/demo", label: "Demo" },
     { path: "/custom", label: "Custom" },
     { path: "/about", label: "About" },

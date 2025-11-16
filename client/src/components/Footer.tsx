@@ -17,7 +17,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-link-home">Home</Link></li>
               <li><Link href="/services" className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-link-services">Services</Link></li>
-              <li><Link href="/bundles" className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-link-bundles">Bundles</Link></li>
+              <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-link-products">Products</Link></li>
               <li><Link href="/demo" className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-link-demo">Demo</Link></li>
             </ul>
           </div>
