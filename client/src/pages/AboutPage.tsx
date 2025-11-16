@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Target, Lightbulb, Zap } from "lucide-react";
+import profileImage from "@assets/1757973172115_1763309380990.jpg";
 
 export default function AboutPage() {
   const beliefs = [
@@ -107,6 +109,10 @@ export default function AboutPage() {
             <Card className="glass-effect">
               <CardContent className="p-8 space-y-6">
                 <div className="text-center mb-6">
+                  <Avatar className="w-32 h-32 mx-auto mb-4 neon-border">
+                    <AvatarImage src={profileImage} alt="Riley Cohen" />
+                    <AvatarFallback>RC</AvatarFallback>
+                  </Avatar>
                   <h3 className="font-display text-2xl font-bold mb-2 gradient-text">Riley Cohen</h3>
                   <p className="text-lg text-muted-foreground">Founder & Lead AI Architect</p>
                 </div>
