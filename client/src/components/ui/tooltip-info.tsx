@@ -2,7 +2,6 @@ import { HelpCircle } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
-  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
@@ -12,21 +11,23 @@ interface TooltipInfoProps {
 
 export function TooltipInfo({ content }: TooltipInfoProps) {
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <button
-            type="button"
-            className="inline-flex items-center justify-center w-4 h-4 ml-1 text-muted-foreground hover:text-primary transition-colors"
-            data-testid="tooltip-trigger"
-          >
-            <HelpCircle className="w-4 h-4" />
-          </button>
-        </TooltipTrigger>
-        <TooltipContent className="max-w-xs glass-effect" data-testid="tooltip-content">
-          <p className="text-sm">{content}</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <Tooltip delayDuration={100}>
+      <TooltipTrigger asChild>
+        <button
+          type="button"
+          className="inline-flex items-center justify-center w-4 h-4 ml-1 text-muted-foreground hover:text-primary transition-colors cursor-help"
+          data-testid="tooltip-trigger"
+        >
+          <HelpCircle className="w-4 h-4" />
+        </button>
+      </TooltipTrigger>
+      <TooltipContent 
+        side="top" 
+        className="max-w-xs z-[100] bg-card border-primary/20" 
+        data-testid="tooltip-content"
+      >
+        <p className="text-sm">{content}</p>
+      </TooltipContent>
+    </Tooltip>
   );
 }
