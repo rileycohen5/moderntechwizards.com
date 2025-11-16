@@ -1,0 +1,119 @@
+we need to edit the bundles page
+
+lets make it be called "Products" (make sure to apply to other parts of the site)
+
+Build a full “Pricing & Bundles” page for the Modern Technology website. The design should be futuristic, flashy, and tech-forward. Use a dark theme with neon accents (blue, purple, teal). Include animations, hover effects, and clean React components.
+
+PAGE REQUIREMENTS
+
+Title/Header Section
+Page title: “AI Automation Bundles”
+
+Subtitle: “Choose the level of automation that fits your business.”
+
+Animated gradient background
+
+Optional ASCII or digital-style logo placeholder
+
+Three Pricing Cards (Side-by-Side, Responsive)
+Each card should display:
+Tier 1 — Starter AI Presence ($750/mo)
+
+24/7 AI Voice Agent (1,000 minutes)
+
+Custom Knowledge Base
+
+Custom Voices
+
+Call Summaries & Transcripts
+
+Analytics Dashboard
+
+Basic Reporting
+
+Email Support
+
+Business Hours Phone Support
+
+CTA button: “Get Started”
+
+Tier 2 — Growth Automations ($1500/mo)
+
+Everything in Starter
+
+Outbound AI Agent
+
+Appointment Scheduling
+
+Missed-call Follow-ups
+
+Customer Check-Ins
+
+Review Generation
+
+Lead Nurturing
+
+CRM Integrations
+
+Calendar Integrations
+
+Custom Reports
+
+Priority Support
+
+CTA button: “Scale My Business”
+
+Tier 3 — Full AI Engagement Suite ($3000/mo)
+
+Everything in Growth
+
+Email Marketing Automation
+
+SMS Marketing Automation
+
+Organic Social Media Management (3–7 posts/week)
+
+AI Copywriting + Optional Video
+
+Quarterly Strategy Sessions
+
+Enterprise Customizations
+
+CTA button: “Go Full Automation”
+
+Design requirements:
+
+Floating neon borders
+
+Card hover animations (scale + glow)
+
+Toggle switch: “Monthly / Yearly (10% off)”
+
+Icons for each feature (AI, calendar, CRM, SMS, email, marketing, voice)
+
+Feature Comparison Table
+Create a clean, responsive table comparing all three tiers across:
+
+Voice AI
+
+Minutes Included
+
+Outbound Automation
+
+CRM Integration
+
+Calendar Integration
+
+Reporting
+
+Email Automation
+
+SMS Automation
+
+Social Media Posts
+
+Support Level
+
+AI Video (optional in Tier 3)
+
+Make the selected tier highlight on hover.
