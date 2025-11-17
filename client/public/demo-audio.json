@@ -1,7 +1,7 @@
 [
   {
     "id": "mortgage_inbound_cs_01",
-    "title": "Mortgage – Inbound Customer Service",
+    "title": "Inbound Customer Service",
     "category": "Customer Service",
     "industry": "Mortgage",
     "filePath": "/assets/audio/mortgage_inbound_cs_01.mp3",
@@ -12,7 +12,7 @@
   },
   {
     "id": "dental_appointment_new_patient_01",
-    "title": "Dental – New Patient Appointment",
+    "title": "New Patient Appointment",
     "category": "Appointment Scheduling",
     "industry": "Dental",
     "filePath": "/assets/audio/dental_appointment_new_patient_01.mp3",
@@ -23,7 +23,7 @@
   },
   {
     "id": "mortgage_outbound_followup_01",
-    "title": "Mortgage – Lead Follow-Up",
+    "title": "Lead Follow-Up",
     "category": "Sales / Outbound",
     "industry": "Mortgage",
     "filePath": "/assets/audio/mortgage_outbound_followup_01.mp3",
@@ -34,7 +34,7 @@
   },
   {
     "id": "realestate_appointment_tour_01",
-    "title": "Real Estate – Property Tour Scheduling",
+    "title": "Property Tour Scheduling",
     "category": "Appointment Scheduling",
     "industry": "Real Estate",
     "filePath": "/assets/audio/realestate_appointment_tour_01.mp3",
@@ -45,7 +45,7 @@
   },
   {
     "id": "insurance_followup_claim_01",
-    "title": "Insurance – Claim Follow-Up",
+    "title": "Claim Follow-Up",
     "category": "Follow-Up & Reminders",
     "industry": "Insurance",
     "filePath": "/assets/audio/insurance_followup_claim_01.mp3",
@@ -56,7 +56,7 @@
   },
   {
     "id": "homeservices_outbound_estimate_01",
-    "title": "Home Services – Estimate Outreach",
+    "title": "Estimate Outreach",
     "category": "Sales / Outbound",
     "industry": "Home Services",
     "filePath": "/assets/audio/homeservices_outbound_estimate_01.mp3",
