@@ -26,7 +26,7 @@ export default function Navigation() {
             <img 
               src={logoImage} 
               alt="Modern Tech Wizards" 
-              className="h-10 sm:h-12 w-auto hover-elevate active-elevate-2 cursor-pointer"
+              className="h-16 sm:h-20 w-auto hover-elevate active-elevate-2 cursor-pointer"
             />
           </Link>
 
