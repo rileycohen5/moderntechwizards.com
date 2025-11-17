@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Target, Lightbulb, Zap } from "lucide-react";
 import profileImage from "@assets/1757973172115_1763309380990.jpg";
+import iconImage from "@assets/Gemini_Generated_Image_fzb2obfzb2obfzb2_1763412873745.png";
 
 export default function AboutPage() {
   const beliefs = [
@@ -26,6 +27,13 @@ export default function AboutPage() {
     <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={iconImage} 
+              alt="Modern Tech Wizards Icon" 
+              className="h-20 w-20 rounded-full object-cover neon-border"
+            />
+          </div>
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
             About Modern Tech Wizards
           </h1>

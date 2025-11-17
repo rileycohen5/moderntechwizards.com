@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import iconImage from "@assets/Gemini_Generated_Image_fzb2obfzb2obfzb2_1763412873745.png";
 
 export default function Footer() {
   return (
@@ -6,7 +7,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="font-display text-lg text-primary">Modern Tech Wizards</h3>
+            <div className="flex items-center gap-3">
+              <img 
+                src={iconImage} 
+                alt="Modern Tech Wizards Icon" 
+                className="h-10 w-10 rounded-full object-cover neon-border"
+              />
+              <h3 className="font-display text-lg text-primary">Modern Tech Wizards</h3>
+            </div>
             <p className="text-sm text-muted-foreground">
               AI systems that handle calls, schedule appointments, and automate marketing — 24/7.
             </p>

@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Clock, Phone, CheckCircle2 } from "lucide-react";
+import iconImage from "@assets/Gemini_Generated_Image_fzb2obfzb2obfzb2_1763412873745.png";
 
 const WEBHOOK_URL = "https://prod-54.westus.logic.azure.com:443/workflows/f81d896d1c2643509b532e2069a339d0/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=j7NMFa6JhJnE14jGDNW1CSUagYu5itl7VYMeuFiXkBU";
 
@@ -71,6 +72,13 @@ export default function ContactPage() {
     <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={iconImage} 
+              alt="Modern Tech Wizards Icon" 
+              className="h-20 w-20 rounded-full object-cover neon-border"
+            />
+          </div>
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
             Get In Touch
           </h1>

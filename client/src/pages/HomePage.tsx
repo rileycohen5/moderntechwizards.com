@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Bot, Clock, TrendingUp, Phone, Calendar, Zap } from "lucide-react";
+import iconImage from "@assets/Gemini_Generated_Image_fzb2obfzb2obfzb2_1763412873745.png";
 
 export default function HomePage() {
   const features = [
@@ -50,6 +51,13 @@ export default function HomePage() {
     <div className="min-h-screen">
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
+          <div className="flex justify-center mb-8">
+            <img 
+              src={iconImage} 
+              alt="Modern Tech Wizards Icon" 
+              className="h-24 w-24 rounded-full object-cover neon-border animate-pulse"
+            />
+          </div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 gradient-text" data-testid="text-hero-headline">
             Build AI voice agents that never sleep.
           </h1>
