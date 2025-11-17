@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/Modern Tech Logo - Copy_1763308971469.png";
+import logoImage from "@assets/Gemini_Generated_Image_jej3djej3djej3dj_1763412344261.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -25,7 +25,7 @@ export default function Navigation() {
           <Link href="/" data-testid="link-home-logo">
             <img 
               src={logoImage} 
-              alt="Modern Technology" 
+              alt="Modern Tech Wizards" 
               className="h-10 sm:h-12 w-auto hover-elevate active-elevate-2 cursor-pointer"
             />
           </Link>

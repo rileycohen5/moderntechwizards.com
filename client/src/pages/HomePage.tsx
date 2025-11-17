@@ -54,7 +54,7 @@ export default function HomePage() {
             Build AI voice agents that never sleep.
           </h1>
           <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto" data-testid="text-hero-subheadline">
-            Modern Technology creates AI systems that handle calls, schedule appointments, and automate marketing — 24/7.
+            Modern Tech Wizards creates AI systems that handle calls, schedule appointments, and automate marketing — 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

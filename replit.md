@@ -1,8 +1,8 @@
-# Modern Technology AI Consulting Website
+# Modern Tech Wizards AI Consulting Website
 
 ## Overview
 
-This is a multi-page marketing website for Modern Technology, an AI consulting business that provides AI voice agents, customer service automation, and revenue automation solutions. The application is built as a full-stack TypeScript project using React for the frontend and Express for the backend, with a focus on creating a futuristic, visually striking user experience featuring dark themes, neon accents, and glassmorphism design elements.
+This is a multi-page marketing website for Modern Tech Wizards, an AI consulting business that provides AI voice agents, customer service automation, and revenue automation solutions. The application is built as a full-stack TypeScript project using React for the frontend and Express for the backend, with a focus on creating a futuristic, visually striking user experience featuring dark themes, neon accents, and glassmorphism design elements.
 
 The website showcases AI products across multiple pages (Home, Services, Products, Demo, Custom Solutions, About, Contact) and targets industries including mortgage, real estate, dental, medical, insurance, and home services.
 

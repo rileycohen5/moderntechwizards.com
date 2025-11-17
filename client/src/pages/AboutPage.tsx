@@ -27,7 +27,7 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
-            About Modern Technology
+            About Modern Tech Wizards
           </h1>
         </div>
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="font-display text-3xl font-bold mb-6 text-center">Why Modern Technology?</h2>
+            <h2 className="font-display text-3xl font-bold mb-6 text-center">Why Modern Tech Wizards?</h2>
             <Card className="glass-effect">
               <CardContent className="p-8 space-y-4">
                 <div className="space-y-4" data-testid="text-why-us">
@@ -94,7 +94,7 @@ export default function AboutPage() {
             <Card className="glass-effect">
               <CardContent className="p-8">
                 <p className="text-lg leading-relaxed text-center" data-testid="text-story">
-                  Modern Technology was founded on a simple observation: businesses waste countless hours on 
+                  Modern Tech Wizards was founded on a simple observation: businesses waste countless hours on 
                   repetitive communication tasks that AI could handle better, faster, and more consistently. 
                   We set out to change that—building voice agents, automation systems, and intelligent workflows 
                   that transform how companies operate. Today, we partner with businesses across industries to 
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   </p>
 
                   <p>
-                    Riley founded Modern Technology to bring this expertise to businesses looking to modernize their 
+                    Riley founded Modern Tech Wizards to bring this expertise to businesses looking to modernize their 
                     operations, automate workflows, and leverage cutting-edge AI. He focuses on building intelligent 
                     voice agents, custom integrations, and high-impact automation systems that help companies operate 
                     faster, smarter, and with 24/7 efficiency.

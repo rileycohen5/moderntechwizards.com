@@ -45,7 +45,7 @@ export default function DemoPage() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
-            Hear Modern Technology in Action
+            Hear Modern Tech Wizards in Action
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-page-description">
             Listen to real AI conversations across industries and use cases

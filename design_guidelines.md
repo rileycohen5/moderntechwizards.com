@@ -1,4 +1,4 @@
-# Design Guidelines: Modern Technology AI Consulting Website
+# Design Guidelines: Modern Tech Wizards AI Consulting Website
 
 ## Design Approach
 **Reference-Based Approach**: Futuristic tech aesthetic inspired by cutting-edge SaaS platforms (Linear, Stripe, Vercel) combined with cyberpunk/neon gaming interfaces for maximum visual impact.
@@ -46,7 +46,7 @@
 - Animated hover states with glowing effects
 
 ### Demo Audio Page (demo.html)
-- Hero: "Hear Modern Technology in Action"
+- Hero: "Hear Modern Tech Wizards in Action"
 - Audio grid organized by categories: Customer Service, Appointment Scheduling, Sales/Outbound, Follow-Up, Industry Specific
 - Custom-styled audio players with neon progress bars
 - Load demos from demo-audio.json dynamically
@@ -60,13 +60,13 @@
 ### About Page (about.html)
 - Mission statement section
 - "What We Believe" values
-- "Why Modern Technology?" differentiators
+- "Why Modern Tech Wizards?" differentiators
 - Company story (placeholder text)
 
 ### Contact Page (contact.html)
 - Two-column layout: Form (left) + Info panel (right)
 - Form fields: Full Name, Company, Email, Phone, Message
-- Info panel: Email (hello@moderntechnology.ai), response time note
+- Info panel: Email (riley@moderntechnology.com), Phone (949-887-9822), response time note
 - Glassmorphism form background with neon accents
 
 ## Global Components
