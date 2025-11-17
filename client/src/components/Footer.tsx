@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src={iconImage} 
                 alt="Modern Tech Wizards Icon" 
-                className="h-10 w-10 rounded-full object-cover neon-border"
+                className="h-16 w-16 rounded-full object-cover neon-border"
               />
               <h3 className="font-display text-lg text-primary">Modern Tech Wizards</h3>
             </div>

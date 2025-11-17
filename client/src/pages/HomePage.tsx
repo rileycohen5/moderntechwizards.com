@@ -55,7 +55,7 @@ export default function HomePage() {
             <img 
               src={iconImage} 
               alt="Modern Tech Wizards Icon" 
-              className="h-24 w-24 rounded-full object-cover neon-border animate-pulse"
+              className="h-40 w-40 rounded-full object-cover neon-border animate-pulse"
             />
           </div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 gradient-text" data-testid="text-hero-headline">

@@ -31,7 +31,7 @@ export default function AboutPage() {
             <img 
               src={iconImage} 
               alt="Modern Tech Wizards Icon" 
-              className="h-20 w-20 rounded-full object-cover neon-border"
+              className="h-32 w-32 rounded-full object-cover neon-border"
             />
           </div>
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
