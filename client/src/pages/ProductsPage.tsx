@@ -107,12 +107,12 @@ export default function ProductsPage() {
           tooltip: "Everything in Advanced, plus multi-system upgrades and priority enhancements."
         },
         { 
-          text: "Email Marketing Automation", 
+          text: "Email Marketing Automation (up to 100,000 emails)", 
           icon: Mail,
           tooltip: "Branded email campaigns: holidays, birthdays, promotions, educationals, cold outreach, review phishing, and drip sequences."
         },
         { 
-          text: "SMS Marketing Automation", 
+          text: "SMS Marketing Automation (up to 5,000 messages)", 
           icon: MessageSquare,
           tooltip: "SMS campaigns for holidays, promotions, reminders, surveys, and reactivation."
         },
