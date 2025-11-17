@@ -1,68 +1,57 @@
 [
   {
-    "id": "mortgage_inbound_cs_01",
+    "id": "inbound_cs_01",
     "title": "Inbound Customer Service",
     "category": "Customer Service",
-    "industry": "Mortgage",
-    "filePath": "/assets/audio/mortgage_inbound_cs_01.mp3",
+    "industry": "General",
+    "filePath": "/assets/audio/inbound_cs_01.mp3",
     "lengthSeconds": 42,
     "language": "en-US",
     "voiceProfile": "Female, neutral, professional",
-    "description": "AI agent answers a borrower call about loan status, verifies identity, and provides a clear update."
+    "description": "AI agent answers an incoming customer call, verifies identity, answers FAQ and takes message of customer needs."
   },
   {
-    "id": "dental_appointment_new_patient_01",
-    "title": "New Patient Appointment",
+    "id": "new_client_appointment_01",
+    "title": "New Client Appointment",
     "category": "Appointment Scheduling",
-    "industry": "Dental",
-    "filePath": "/assets/audio/dental_appointment_new_patient_01.mp3",
+    "industry": "General",
+    "filePath": "/assets/audio/new_client_appointment_01.mp3",
     "lengthSeconds": 35,
     "language": "en-US",
     "voiceProfile": "Male, friendly, upbeat",
-    "description": "AI agent books a first-time dental appointment and sends a confirmation text."
+    "description": "AI agent books appointments for new or existing clients. The agent can take inbound calls, or place outbound calls to get appointments scheduled."
   },
   {
-    "id": "mortgage_outbound_followup_01",
+    "id": "lead_followup_01",
     "title": "Lead Follow-Up",
     "category": "Sales / Outbound",
-    "industry": "Mortgage",
-    "filePath": "/assets/audio/mortgage_outbound_followup_01.mp3",
+    "industry": "General",
+    "filePath": "/assets/audio/lead_followup_01.mp3",
     "lengthSeconds": 55,
     "language": "en-US",
     "voiceProfile": "Female, confident",
-    "description": "AI agent follows up on a mortgage lead and books a call with a loan officer."
+    "description": "AI agent follows up with a new lead, answers basic questions, and books a call or appointment with your team."
   },
   {
-    "id": "realestate_appointment_tour_01",
-    "title": "Property Tour Scheduling",
-    "category": "Appointment Scheduling",
-    "industry": "Real Estate",
-    "filePath": "/assets/audio/realestate_appointment_tour_01.mp3",
-    "lengthSeconds": 38,
-    "language": "en-US",
-    "voiceProfile": "Female, professional, warm",
-    "description": "AI agent schedules a property viewing and collects buyer preferences."
-  },
-  {
-    "id": "insurance_followup_claim_01",
-    "title": "Claim Follow-Up",
-    "category": "Follow-Up & Reminders",
-    "industry": "Insurance",
-    "filePath": "/assets/audio/insurance_followup_claim_01.mp3",
-    "lengthSeconds": 47,
-    "language": "en-US",
-    "voiceProfile": "Male, reassuring, clear",
-    "description": "AI agent provides claim status update and answers coverage questions."
-  },
-  {
-    "id": "homeservices_outbound_estimate_01",
+    "id": "estimate_outreach_01",
     "title": "Estimate Outreach",
     "category": "Sales / Outbound",
-    "industry": "Home Services",
-    "filePath": "/assets/audio/homeservices_outbound_estimate_01.mp3",
+    "industry": "General",
+    "filePath": "/assets/audio/estimate_outreach_01.mp3",
     "lengthSeconds": 41,
     "language": "en-US",
     "voiceProfile": "Male, friendly, professional",
-    "description": "AI agent follows up on service request and schedules an on-site estimate."
+    "description": "AI agent reaches out regarding a service inquiry, provides basic information, and schedules an estimate or consultation."
+  },
+  {
+    "id": "status_followup_01",
+    "title": "Status Follow-Up",
+    "category": "Follow-Up & Reminders",
+    "industry": "General",
+    "filePath": "/assets/audio/status_followup_01.mp3",
+    "lengthSeconds": 47,
+    "language": "en-US",
+    "voiceProfile": "Male, reassuring, clear",
+    "description": "AI agent provides a status update on an ongoing request and answers common questions so customers stay informed."
   }
 ]

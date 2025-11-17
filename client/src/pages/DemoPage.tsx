@@ -47,8 +47,11 @@ export default function DemoPage() {
           <h1 className="font-display text-5xl font-bold mb-6 gradient-text" data-testid="text-page-title">
             Hear Modern Tech Wizards in Action
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-page-description">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8" data-testid="text-page-description">
             Listen to real AI conversations across industries and use cases
+          </p>
+          <p className="text-lg text-foreground/90 max-w-4xl mx-auto" data-testid="text-custom-message">
+            Here are some widely used agents, however we build custom agents based on your company's needs. Tell us what you want and we'll build it.
           </p>
         </div>
 
