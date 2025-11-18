@@ -24,27 +24,17 @@
     "title": "Lead Follow-Up",
     "category": "Sales / Outbound",
     "industry": "General",
-    "filePath": "",
+    "filePath": "@assets/lead_followup_01.wav",
     "language": "en-US",
     "voiceProfile": "Female, confident",
     "description": "AI agent follows up with a new lead, answers basic questions, and books a call or appointment with your team."
-  },
-  {
-    "id": "estimate_outreach_01",
-    "title": "Estimate Outreach",
-    "category": "Sales / Outbound",
-    "industry": "General",
-    "filePath": "",
-    "language": "en-US",
-    "voiceProfile": "Male, friendly, professional",
-    "description": "AI agent reaches out regarding a service inquiry, provides basic information, and schedules an estimate or consultation."
   },
   {
     "id": "status_followup_01",
     "title": "Status Follow-Up",
     "category": "Follow-Up & Reminders",
     "industry": "General",
-    "filePath": "",
+    "filePath": "@assets/status_followup_01.wav",
     "language": "en-US",
     "voiceProfile": "Male, reassuring, clear",
     "description": "AI agent provides a status update on an ongoing request and answers common questions so customers stay informed."

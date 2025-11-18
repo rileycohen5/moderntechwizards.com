@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Play, Pause } from "lucide-react";
 import inboundCsAudio from "@assets/inbound_cs_01.wav";
 import newClientAppointmentAudio from "@assets/new_client_appointment_01.wav";
+import leadFollowupAudio from "@assets/lead_followup_01.wav";
+import statusFollowupAudio from "@assets/status_followup_01.wav";
 
 interface AudioDemo {
   id: string;
@@ -34,6 +36,8 @@ export default function DemoPage() {
   const getAudioPath = (filePath: string) => {
     if (filePath.includes('inbound_cs_01.wav')) return inboundCsAudio;
     if (filePath.includes('new_client_appointment_01.wav')) return newClientAppointmentAudio;
+    if (filePath.includes('lead_followup_01.wav')) return leadFollowupAudio;
+    if (filePath.includes('status_followup_01.wav')) return statusFollowupAudio;
     return '';
   };
 
