@@ -13,7 +13,7 @@ export default function ServicesPage() {
         "Multi-language support (50+ languages)",
         "Custom knowledge base ingestion",
         "Dynamic conversation flows",
-        "Real-time sentiment analysis"
+        "Real-time sentiment analysis","Strategic Marketing Journies", "Holiday Outreach", "Educational Outreach", "Review Phishing", "Product Upsells", "Many more....."
       ]
     },
     {
@@ -109,7 +109,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-page-description">
-            Individual AI products designed to transform your business operations
+            Individual products and stradegy designed and personalized to transform your business operations
           </p>
         </div>
 

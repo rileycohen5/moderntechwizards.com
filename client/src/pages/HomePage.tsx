@@ -14,18 +14,18 @@ export default function HomePage() {
     },
     {
       icon: Clock,
-      title: "24/7 Support Automation",
-      description: "Never miss a call. Our AI handles customer inquiries, support tickets, and scheduling around the clock."
+      title: "Marketing Automation",
+      description: "Smart outbound calls, SMS/email follow-ups, review requests, lead nurturing, and re-engagement campaigns designed to drive revenue and increase customer retention."
     },
     {
       icon: TrendingUp,
       title: "Revenue-Focused Automation",
-      description: "Outbound campaigns, lead follow-ups, and appointment booking designed to maximize your conversions."
+      description: "Creation and posting across major platforms — consistent, on-brand, and optimized for growth."
     }
   ];
 
   const industries = [
-    "Mortgage", "Real Estate", "Dental", "Medical", 
+    "ALL INDUSTRIES","Mortgage", "Real Estate", "Dental", "Medical", 
     "Insurance", "Home Services", "Legal", "Financial"
   ];
 
@@ -59,10 +59,10 @@ export default function HomePage() {
             />
           </div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 gradient-text" data-testid="text-hero-headline">
-            Build AI voice agents that never sleep.
+            Modernize your business through advanced technological stradegy
           </h1>
           <p className="text-xl sm:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto" data-testid="text-hero-subheadline">
-            Modern Tech Wizards creates AI systems that handle calls, schedule appointments, and automate marketing — 24/7.
+            We build next level automations and systems to improve customer service, customer aquisition and customer retention.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

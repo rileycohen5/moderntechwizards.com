@@ -83,7 +83,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-page-description">
-            Ready to transform your business with AI? Let's talk.
+            Ready to modernize your business? Let's talk.
           </p>
         </div>
 
