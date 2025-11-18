@@ -86,13 +86,14 @@ export default function DemoPage() {
 
         {categories.map((category, catIndex) => (
           <div key={catIndex} className="mb-16">
-            <h2 className="font-display text-3xl font-bold mb-8" data-testid={`text-category-${catIndex}`}>
+            <h2 className="font-display text-3xl font-bold mb-8 text-center" data-testid={`text-category-${catIndex}`}>
               {category}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {demos
-                .filter(demo => demo.category === category)
-                .map((demo, demoIndex) => (
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 gap-6 max-w-2xl w-full">
+                {demos
+                  .filter(demo => demo.category === category)
+                  .map((demo, demoIndex) => (
                   <Card 
                     key={demo.id} 
                     className="glass-effect neon-glow-hover transition-all duration-300"
@@ -137,6 +138,7 @@ export default function DemoPage() {
                     </CardContent>
                   </Card>
                 ))}
+              </div>
             </div>
           </div>
         ))}
