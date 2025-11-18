@@ -4,8 +4,7 @@
     "title": "Inbound Customer Service",
     "category": "Customer Service",
     "industry": "General",
-    "filePath": "/assets/audio/inbound_cs_01.mp3",
-    "lengthSeconds": 42,
+    "filePath": "@assets/inbound_cs_01.wav",
     "language": "en-US",
     "voiceProfile": "Female, neutral, professional",
     "description": "AI agent answers an incoming customer call, verifies identity, answers FAQ and takes message of customer needs."
@@ -15,8 +14,7 @@
     "title": "New Client Appointment",
     "category": "Appointment Scheduling",
     "industry": "General",
-    "filePath": "/assets/audio/new_client_appointment_01.mp3",
-    "lengthSeconds": 35,
+    "filePath": "@assets/new_client_appointment_01.wav",
     "language": "en-US",
     "voiceProfile": "Male, friendly, upbeat",
     "description": "AI agent books appointments for new or existing clients. The agent can take inbound calls, or place outbound calls to get appointments scheduled."
@@ -26,8 +24,7 @@
     "title": "Lead Follow-Up",
     "category": "Sales / Outbound",
     "industry": "General",
-    "filePath": "/assets/audio/lead_followup_01.mp3",
-    "lengthSeconds": 55,
+    "filePath": "",
     "language": "en-US",
     "voiceProfile": "Female, confident",
     "description": "AI agent follows up with a new lead, answers basic questions, and books a call or appointment with your team."
@@ -37,8 +34,7 @@
     "title": "Estimate Outreach",
     "category": "Sales / Outbound",
     "industry": "General",
-    "filePath": "/assets/audio/estimate_outreach_01.mp3",
-    "lengthSeconds": 41,
+    "filePath": "",
     "language": "en-US",
     "voiceProfile": "Male, friendly, professional",
     "description": "AI agent reaches out regarding a service inquiry, provides basic information, and schedules an estimate or consultation."
@@ -48,8 +44,7 @@
     "title": "Status Follow-Up",
     "category": "Follow-Up & Reminders",
     "industry": "General",
-    "filePath": "/assets/audio/status_followup_01.mp3",
-    "lengthSeconds": 47,
+    "filePath": "",
     "language": "en-US",
     "voiceProfile": "Male, reassuring, clear",
     "description": "AI agent provides a status update on an ongoing request and answers common questions so customers stay informed."

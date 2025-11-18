@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { Play, Pause } from "lucide-react";
+import inboundCsAudio from "@assets/inbound_cs_01.wav";
+import newClientAppointmentAudio from "@assets/new_client_appointment_01.wav";
 
 interface AudioDemo {
   id: string;
@@ -11,7 +12,6 @@ interface AudioDemo {
   category: string;
   industry: string;
   filePath: string;
-  lengthSeconds: number;
   language: string;
   voiceProfile: string;
   description: string;
@@ -20,6 +20,7 @@ interface AudioDemo {
 export default function DemoPage() {
   const [demos, setDemos] = useState<AudioDemo[]>([]);
   const [playingId, setPlayingId] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     fetch('/demo-audio.json')
@@ -30,13 +31,37 @@ export default function DemoPage() {
 
   const categories = Array.from(new Set(demos.map(d => d.category)));
 
-  const handlePlay = (id: string) => {
+  const getAudioPath = (filePath: string) => {
+    if (filePath.includes('inbound_cs_01.wav')) return inboundCsAudio;
+    if (filePath.includes('new_client_appointment_01.wav')) return newClientAppointmentAudio;
+    return '';
+  };
+
+  const handlePlay = (id: string, filePath: string) => {
+    const audioPath = getAudioPath(filePath);
+    
+    if (!audioPath) {
+      console.log('No audio file available for:', id);
+      return;
+    }
+
     if (playingId === id) {
+      audioRef.current?.pause();
       setPlayingId(null);
-      console.log('Paused:', id);
     } else {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+      
+      const audio = new Audio(audioPath);
+      audioRef.current = audio;
+      
+      audio.play().catch(err => console.error('Playback error:', err));
       setPlayingId(id);
-      console.log('Playing:', id);
+      
+      audio.onended = () => {
+        setPlayingId(null);
+      };
     }
   };
 
@@ -73,17 +98,19 @@ export default function DemoPage() {
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1">
                           <CardTitle className="text-xl mb-2">{demo.title}</CardTitle>
-                          <div className="flex gap-2 mb-3">
-                            <Badge variant="outline">{demo.industry}</Badge>
-                            <Badge variant="outline">{demo.lengthSeconds}s</Badge>
-                          </div>
+                          {demo.industry && (
+                            <div className="flex gap-2 mb-3">
+                              <Badge variant="outline">{demo.industry}</Badge>
+                            </div>
+                          )}
                         </div>
                         <Button
                           size="icon"
                           variant={playingId === demo.id ? "default" : "outline"}
-                          onClick={() => handlePlay(demo.id)}
+                          onClick={() => handlePlay(demo.id, demo.filePath)}
                           className="neon-glow-hover"
                           data-testid={`button-play-${demo.id}`}
+                          disabled={!demo.filePath}
                         >
                           {playingId === demo.id ? (
                             <Pause className="h-5 w-5" />
