@@ -49,24 +49,48 @@ export default function DemoPage() {
       return;
     }
 
-    if (playingId === id) {
-      audioRef.current?.pause();
+    // If clicking the same audio that's playing, pause it
+    if (playingId === id && audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current = null;
       setPlayingId(null);
-    } else {
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-      
-      const audio = new Audio(audioPath);
-      audioRef.current = audio;
-      
-      audio.play().catch(err => console.error('Playback error:', err));
-      setPlayingId(id);
-      
-      audio.onended = () => {
-        setPlayingId(null);
-      };
+      return;
     }
+
+    // Stop any currently playing audio
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current = null;
+    }
+    
+    // Create and play new audio
+    const audio = new Audio(audioPath);
+    audioRef.current = audio;
+    
+    // Set up event listeners
+    audio.onended = () => {
+      setPlayingId(null);
+      audioRef.current = null;
+    };
+    
+    audio.onerror = (err) => {
+      console.error('Audio playback error:', err);
+      setPlayingId(null);
+      audioRef.current = null;
+    };
+    
+    // Play audio and update state
+    audio.play()
+      .then(() => {
+        setPlayingId(id);
+      })
+      .catch(err => {
+        console.error('Playback error:', err);
+        setPlayingId(null);
+        audioRef.current = null;
+      });
   };
 
   return (
