@@ -31,6 +31,17 @@ export default function DemoPage() {
       .catch(err => console.error('Failed to load demos:', err));
   }, []);
 
+  // Cleanup: stop audio when leaving the page
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
   const categories = Array.from(new Set(demos.map(d => d.category)));
 
   const getAudioPath = (filePath: string) => {
